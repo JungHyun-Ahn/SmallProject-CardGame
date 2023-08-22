@@ -1,0 +1,147 @@
+@import url('/css/reset.css');
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+#wrap {
+  width: 100%;
+  height: 100vh;
+  background-color: #121212;
+  overflow: hidden;
+}
+.inner {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.title h1 {
+  margin-bottom: 10px;
+  font-family: 'PyeongChangPeace-Bold';
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: 1px;
+}
+.title .timer {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.title .timer i {
+  transform: translateY(1.5px);
+  font-size: 28px;
+}
+.title .timer p {
+  display: flex;
+  gap: 3px;
+}
+.cards {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 5px;
+  background-color: #fff;
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.card .front, .card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  pointer-events: none;
+}
+.card .back {
+  transform: rotateY(180deg);
+}
+.card.flip {
+  transform: rotateY(0deg);
+}
+.popUpBox {
+  display: none;
+}
+.popUp {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  padding: 30px;
+  width: 85%;
+  /* height: 50%; */
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.popUp h3 {
+  font-size: 40px;
+}
+.popUp .retry {
+  text-align: center;
+}
+.popUp .retry button {
+  margin-bottom: 10px;
+  width: 70px;
+  height: 70px;
+  font-size: 35px;
+  border-radius: 10%;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+
+  transition: transform 0.2s;
+}
+.popUp .retry button:hover {
+  transform: scale(1.1);
+}
+.popUp .retry button i {
+  display: block;
+  transform: translateY(1px);
+}
+.popUp .retry p {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+footer p, footer a {
+  color: #ddd;
+}
+footer a {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  .title h1 {
+    font-size: 36px;
+  }
+}
