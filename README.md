@@ -1,5 +1,5 @@
 # SmallProject-CardGame
-![playList](https://github.com/JungHyun-Ahn/SmallProject-PlayList/assets/84699689/7d3f6a98-4dc8-48b6-81ac-c2867d0fd4e8)
+![cardGame](https://github.com/JungHyun-Ahn/SmallProject-CardGame/assets/84699689/5a1c5866-2c1b-4e0f-b626-c92b10b97294)
 
 ## 플레이리스트
 * 자바스크립트 연습을 위해 만들어본 게임입니다. 본 사이트는 포트폴리오 용도로 만들어졌습니다.<br/>
