@@ -13,11 +13,11 @@ https://junghyun-ahn.github.io/SmallProject-CardGame/
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 
 ## 주요 기능
-* #### 재생 / 멈춤 / 랜덤 재생 / 다시 듣기
+* #### 카드 뒤집기
 
-* #### 이전 및 다음 노래 재생
+* #### 카드 짝 확인하기
 
-* #### 랜덤 재생
+* #### 남은 시간 업데이트
 
-* #### 플레이 bar
+* #### WIN / LOSE 상황에 따른 팝업 창 띄우기
   
