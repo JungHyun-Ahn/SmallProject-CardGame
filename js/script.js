@@ -28,6 +28,7 @@ retryBtn.addEventListener('click', () => {
 // 게임 시작
 function startGame() {
   isStart = true;
+  matchCount = 0;
   cardsContainer.style.pointerEvents = 'auto';
   const cardDeck = createCard();
   console.log(cardDeck);
